@@ -70,16 +70,24 @@
             </svg>
           </a>
         </div>
-        <div class="header__bottom-search">
+        <!-- <div class="header__bottom-search">
           <a class="header__bottom-search-link" href="#">
-            <!-- <img class="header__bottom-search-img" src="images/header__search-pic.svg" alt="search"> -->
             <svg class="header__bottom-search-img" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"/>
             </svg>
           </a>
           <input class="header__bottom-search-input" type="text" placeholder="Поиск по сайту">
-        </div>
+        </div> -->
+        <form class="header__bottom-form">
+          <button class="header__bottom-btn">
+            <svg class="header__bottom-search-img" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="6.8678" height="1.71695" transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0969 18C7.53041 18 3.99692 14.3229 3.99692 10C3.99692 5.67715 7.53041 2 12.0969 2C16.6634 2 20.1969 5.67715 20.1969 10C20.1969 14.3229 16.6634 18 12.0969 18ZM12.0969 20C6.57408 20 2.09692 15.5228 2.09692 10C2.09692 4.47715 6.57408 0 12.0969 0C17.6198 0 22.0969 4.47715 22.0969 10C22.0969 15.5228 17.6198 20 12.0969 20Z"/>
+            </svg>
+          </button>
+          <input class="header__bottom-search-input" type="text" placeholder="Поиск по сайту">
+        </form>
       </div>
     </div>
   </header>
@@ -132,7 +140,6 @@
     <section class="projects mb80">
       <div class="container">
         <h2 class="projects__title title mb30">Проекты</h2>
-        <!-- <p class="projects__text section-text mb30">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены исключительно в разрезе маркетинговых и финансовых      предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости. Подробнее: <a class="projects__text-link" href="#">blanchard-art.ru/projects/about</a></p>  -->
         <div class="projects__wrapper mb30">
           <span class="projects__span section-text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское</span>
 
@@ -214,7 +221,7 @@
               <!-- <div class="swiper-button-prev"></div>
               <div class="swiper-button-next"></div> -->
             </div>
-            <svg class="projects__arrow projects__arrow-left" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- <svg class="projects__arrow projects__arrow-left" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path class="projects__svg-path-1" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#ECECEC"/>
               <path class="projects__svg-path-2" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="black"/>
               <path class="projects__svg-path-3" d="M16 20L11 15L16 10" stroke="black"/>
@@ -223,7 +230,21 @@
               <path  class="projects__svg-path-1" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#ECECEC"/>
               <path class="projects__svg-path-2" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="black"/>
               <path class="projects__svg-path-3" d="M14 20L19 15L14 10" stroke="black"/>
-            </svg>
+            </svg> -->
+            <button class="projects__slider-left projects__slider-btn">
+              <svg class="projects__arrow projects__arrow-left" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="projects__svg-path-1" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#ECECEC"/>
+                <path class="projects__svg-path-2" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" stroke="black"/>
+                <path class="projects__svg-path-3" d="M16 20L11 15L16 10" stroke="black"/>
+              </svg>
+            </button>
+            <button class="projects__slider-right projects__slider-btn">
+              <svg class="projects__arrow projects__arrow-right" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path  class="projects__svg-path-1" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#ECECEC"/>
+                <path class="projects__svg-path-2" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="black"/>
+                <path class="projects__svg-path-3" d="M14 20L19 15L14 10" stroke="black"/>
+              </svg>
+            </button>
           </div>
         </div> 
       </div>
@@ -281,6 +302,7 @@
     <script src="swiper-bundle.js"></script>
     <script src="inputmask.min.js"></script>
     <script src="choices.min.js"></script>
+    <script src="focus-visible.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

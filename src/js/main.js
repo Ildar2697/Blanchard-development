@@ -23,8 +23,8 @@ window.addEventListener('DOMContentLoaded', function() {
     direction: 'horizontal',
     loop: true,
     navigation: {
-      nextEl: '.projects__arrow-right',
-      prevEl: '.projects__arrow-left',
+      nextEl: '.projects__slider-right',
+      prevEl: '.projects__slider-left',
     },
     slidesPerView: 3,
     slidesPerGroup: 3,
