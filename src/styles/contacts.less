@@ -1,0 +1,86 @@
+.contacts {
+        width: 1600px;
+        max-width: 100%;
+        margin: 0 auto;
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        // width: 1600px;
+        // max-width: 100%;
+        // margin: 0 auto;
+    }
+    &__left {
+        flex-shrink: 0;
+        width: 35vw;
+        max-width: 522px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 122px;
+        // height: 500px;
+        // padding: 122px 122px 122px 0;
+        // background-color: lightcyan;
+        &-img {
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+        &-title {
+            margin-bottom: 10px;
+            font-family: 'open_sanssemibold';
+            font-size: 24px;
+        }
+        &-order {
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        &-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &-text {
+            margin-bottom: 40px;
+        }
+        &-input {
+            width: 100%;
+            padding: 10px 24px;
+            margin-bottom: 23px;
+            border-radius: 100px;
+            border: 1px solid #333333;
+            font-family: 'open_sansregular';
+            font-size: 16px;
+            :placeholder-shown {
+                color: #999999;
+            }
+        }
+        &-btn {
+            margin-bottom: 38px;
+        }
+    }
+    &__right {
+        // height: 500px;
+        width: 100%;
+        margin-right: calc((100% - 100vw) / 2);
+        // background-color: lightpink;
+    }
+}
+.contacts__left-name.contacts__left-err {
+    border: 1px solid red;
+}
+.contacts__left-name.contacts__left-success {
+    border: 1px solid green;
+}
+.contacts__left-tel.contacts__left-err {
+    border: 1px solid red;
+}
+.contacts__left-tel.contacts__left-success {
+    border: 1px solid green;
+}
+#map {
+    width: 100%;
+    height: 700px;
+}
+[class*="ground-pane"] {
+    filter: grayscale(1);
+}
