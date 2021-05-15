@@ -131,8 +131,181 @@
       <div class="container editions__wrapper">
         <h2 class="editions__title title mb30">Издания</h2>
         <div class="editions__main">
-          <div class="editions__left"></div>
-          <div class="editions__right"></div>
+          <div class="editions__left">
+            <h3 class="editions__left-title">Категории</h3>
+            <form class="editions__left-form">
+              <div class="editions__inputs-wrapper">
+                <label class="editions__input-label">
+                  <input class="editions__input" type="checkbox" name="name1">
+                  <span class="editions__span" aria-label="2">Бестселлеры</span>
+                </label>
+                <label class="editions__input-label">
+                  <input class="editions__input" type="checkbox" name="name2">
+                  <span class="editions__span" aria-label="3">Искусство</span>
+                </label>
+                <label class="editions__input-label">
+                  <input class="editions__input" type="checkbox" name="name3">
+                  <span class="editions__span">Архитектура</span>
+                </label>
+                <label class="editions__input-label">
+                  <input class="editions__input" type="checkbox" name="name4">
+                  <span class="editions__span">Дизайн</span>
+                </label>
+                <label class="editions__input-label">
+                  <input class="editions__input" type="checkbox" name="name5">
+                  <span class="editions__span">Мода</span>
+                </label>
+                <label class="editions__input-label">
+                  <input class="editions__input" type="checkbox" name="name6">
+                  <span class="editions__span">Детям</span>
+                </label>
+                <label class="editions__input-label">
+                  <input class="editions__input" type="checkbox" name="name7">
+                  <span class="editions__span">Художественная литература</span>
+                </label>
+                <label class="editions__input-label">
+                  <input class="editions__input" type="checkbox" name="name8">
+                  <span class="editions__span">Публицистика</span>
+                </label>
+                <label class="editions__input-label">
+                  <input class="editions__input" type="checkbox" name="name9">
+                  <span class="editions__span">Путеводители</span>
+                </label>
+                <label class="editions__input-label">
+                  <input class="editions__input" type="checkbox" name="name10">
+                  <span class="editions__span">Философия</span>
+                </label>
+                <label class="editions__input-label">
+                  <input class="editions__input" type="checkbox" name="name11">
+                  <span class="editions__span">Учебная литература</span>
+                </label>
+                <label class="editions__input-label">
+                  <input class="editions__input" type="checkbox" name="name12">
+                  <span class="editions__span">Журналы и газеты</span>
+                </label>
+              </div>
+              <h3 class="editions__left-title">Цена</h3>
+              <div class="editions__price">
+                <span class="editions__price-span">От</span>
+                <input type="number" class="editions__price-input">
+                <span class="editions__price-span">до</span>
+                <input type="number" class="editions__price-input">
+                <span class="editions__price-span">руб.</span>
+              </div>
+            </form>
+          </div>
+          <div class="editions__right">
+            <!-- <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div> -->
+            <div class="swiper-pagination swiper-editions-pagination"></div>
+            <button class="editions__btn-left editions__btn">
+              <svg class="editions__arrow editions__arrow-left" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="editions__svg-path-1" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z" fill="#ECECEC"/>
+                <path class="editions__svg-path-2" d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"/>
+                <path class="editions__svg-path-3" d="M16 20L11 15L16 10" stroke="black"/>
+              </svg>
+            </button>
+            <button class="editions__btn-right editions__btn">
+              <svg class="editions__arrow editions__arrow-right" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path  class="editions__svg-path-1" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" fill="#ECECEC"/>
+                <path class="editions__svg-path-2" d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z" stroke="black"/>
+                <path class="editions__svg-path-3" d="M14 20L19 15L14 10" stroke="black"/>
+              </svg>
+            </button>
+            <div class="swiper__editions">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="editions__slide-img editions__slide-img-1"></div>
+                  <div class="editions__slide-descr">
+                    <div class="editions__slide-descr-left">
+                      <p class="editions__slide-top">Искусство цвета</p>
+                      <p class="editions__slide-bottom">Иттен, Иоханнес</p>
+                    </div>
+                    <span class="editions__slide-descr-right">620 руб</span>
+                  </div>
+                  <button class="editions__slide-btn">Заказать</button>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="editions__slide-img editions__slide-img-2"></div>
+                    <div class="editions__slide-descr">
+                      <div class="editions__slide-descr-left">
+                        <p class="editions__slide-top">Искусство цвета</p>
+                        <p class="editions__slide-bottom">Иттен, Иоханнес</p>
+                      </div>
+                      <span class="editions__slide-descr-right">620 руб</span>
+                    </div>
+                    <button class="editions__slide-btn">Заказать</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="editions__slide-img editions__slide-img-3"></div>
+                    <div class="editions__slide-descr">
+                      <div class="editions__slide-descr-left">
+                        <p class="editions__slide-top">Искусство цвета</p>
+                        <p class="editions__slide-bottom">Иттен, Иоханнес</p>
+                      </div>
+                      <span class="editions__slide-descr-right">620 руб</span>
+                    </div>
+                    <button class="editions__slide-btn">Заказать</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="editions__slide-img editions__slide-img-4"></div>
+                    <div class="editions__slide-descr">
+                      <div class="editions__slide-descr-left">
+                        <p class="editions__slide-top">Искусство цвета</p>
+                        <p class="editions__slide-bottom">Иттен, Иоханнес</p>
+                      </div>
+                      <span class="editions__slide-descr-right">620 руб</span>
+                    </div>
+                    <button class="editions__slide-btn">Заказать</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="editions__slide-img editions__slide-img-5"></div>
+                    <div class="editions__slide-descr">
+                      <div class="editions__slide-descr-left">
+                        <p class="editions__slide-top">Искусство цвета</p>
+                        <p class="editions__slide-bottom">Иттен, Иоханнес</p>
+                      </div>
+                      <span class="editions__slide-descr-right">620 руб</span>
+                    </div>
+                    <button class="editions__slide-btn">Заказать</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="editions__slide-img editions__slide-img-6"></div>
+                    <div class="editions__slide-descr">
+                      <div class="editions__slide-descr-left">
+                        <p class="editions__slide-top">Искусство цвета</p>
+                        <p class="editions__slide-bottom">Иттен, Иоханнес</p>
+                      </div>
+                      <span class="editions__slide-descr-right">620 руб</span>
+                    </div>
+                    <button class="editions__slide-btn">Заказать</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="swiper-slide">
+                    <div class="editions__slide-img editions__slide-img-7"></div>
+                    <div class="editions__slide-descr">
+                      <div class="editions__slide-descr-left">
+                        <p class="editions__slide-top">Искусство цвета</p>
+                        <p class="editions__slide-bottom">Иттен, Иоханнес</p>
+                      </div>
+                      <span class="editions__slide-descr-right">620 руб</span>
+                    </div>
+                    <button class="editions__slide-btn">Заказать</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -142,7 +315,6 @@
         <h2 class="projects__title title mb30">Проекты</h2>
         <div class="projects__wrapper mb30">
           <span class="projects__span section-text">Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А ещё независимые государства смешаны с не уникальными данными до степени совершенной неузнаваемости, из-за чего возрастает их статус бесполезности. Прежде всего, постоянное информационно-пропагандистское</span>
-
           <div class="task">
             <div class="tooltip-1">
               <button aria-describedby="tooltip-1">
@@ -154,9 +326,7 @@
               <div class="tooltip-text" role="tooltip" id="tooltip-1">Пример современных тенденций - современная методология разработки</div>
             </div>
           </div>
-
           <span class="projects__span section-text">обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И нет сомнений, что действия представителей оппозиции могут быть рассмотрены</span>
-
           <div class="task">
             <div class="tooltip-1">
               <button aria-describedby="tooltip-2">
@@ -168,9 +338,7 @@
               <div class="tooltip-text" role="tooltip" id="tooltip-2">Приятно, граждане, наблюдать, как сделанные на базе аналитики выводы вызывают у вас эмоции</div>
             </div>
           </div>
-
           <span class="projects__span section-text">исключительно в разрезе маркетинговых и финансовых</span>
-
           <div class="task">
             <div class="tooltip-1">
               <button aria-describedby="tooltip-3">
@@ -182,7 +350,6 @@
               <div class="tooltip-text" role="tooltip" id="tooltip-3">В стремлении повысить качество </div>
             </div>
           </div>
-
           <span class="projects__span section-text">предпосылок. Банальные, но неопровержимые выводы, а также представители современных социальных резервов призывают нас к новым свершениям, которые, в свою очередь, должны быть смешаны с не уникальными данными до степени совершенной неузнаваемости.</span>
         </div>
         <div class="projects__partners">

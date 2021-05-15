@@ -30,6 +30,24 @@ window.addEventListener('DOMContentLoaded', function() {
     slidesPerGroup: 3,
     // spaceBetween: 20,
   });
+  const swiperEditions = new Swiper('.swiper__editions', {
+    direction: 'horizontal',
+    loop: false,
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+    },
+    navigation: {
+      nextEl: '.editions__btn-right',
+      prevEl: '.editions__btn-left',
+    },
+    slidesPerView: 3,
+    slidesPerGroup: 3,
+    spaceBetween: 50,
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
   
     ymaps.ready(init);
     function init(){
